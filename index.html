@@ -1,54 +1,114 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Profil – VerifiedMe</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      padding: 40px;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VerifiedMe | Echte Menschen. Sicherer Austausch.</title>
+    <style>
+        :root {
+            --discord-blue: #7289da;
+            --dark-bg: #2c2f33;
+            --white: #ffffff;
+            --grey: #99aab5;
+        }
 
-    .profile {
-      background: white;
-      padding: 20px 25px;
-      max-width: 400px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--white);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
 
-    .username {
-      font-size: 22px;
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
+        .container {
+            max-width: 800px;
+            padding: 20px;
+        }
 
-    .verified {
-      color: green;
-      font-size: 20px;
-    }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: var(--discord-blue);
+        }
 
-    .status {
-      margin-top: 10px;
-      color: #555;
-    }
-  </style>
+        p.subtitle {
+            font-size: 1.2rem;
+            color: var(--grey);
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background-color: #23272a;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .button {
+            background-color: var(--discord-blue);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.2s, background-color 0.2s;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #5b6eae;
+            transform: scale(1.05);
+        }
+
+        .vision-section {
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: var(--grey);
+            border-top: 1px solid #444;
+            padding-top: 20px;
+        }
+
+        .badge-preview {
+            color: #43b581;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
 
-  <div class="profile">
-    <div class="username">
-      MaxMustermann
-      <span class="verified">✔</span>
-    </div>
+    <div class="container">
+        <header>
+            <h1>VerifiedMe</h1>
+            <p class="subtitle">Echte Menschen statt Bots. Deine Vertrauensplattform für Discord.</p>
+        </header>
 
-    <div class="status">
-      Status: <strong>Verifizierter Mensch</strong>
+        <main class="card">
+            <h2>Werde Teil der Beta-Phase</h2>
+            <p>Sichere dir deinen Platz und zeige deiner Community, dass du ein echter Mensch bist. In der Testphase komplett kostenlos.</p>
+            
+            <a href="https://forms.gle/gLnJsRrNQyXgRufs5" class="button">Jetzt verifizieren lassen</a>
+            
+            <span class="badge-preview">✅ Verified Status nach Prüfung</span>
+        </main>
+
+        <section class="vision-section">
+            <h3>Unsere Vision</h3>
+            <p>Was als Lösung für Discord beginnt, wird zur globalen Schnittstelle für digitales Vertrauen. Wir bauen die Brücke zwischen Nutzern und Plattformen – für ein Internet ohne Fake-Accounts.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 VerifiedMe.ch</p>
+        </footer>
     </div>
-  </div>
 
 </body>
 </html>
