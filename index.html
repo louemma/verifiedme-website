@@ -10,6 +10,7 @@
             --dark-bg: #2c2f33;
             --white: #ffffff;
             --grey: #99aab5;
+            --card-bg: #23272a;
         }
 
         body {
@@ -20,66 +21,102 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
             min-height: 100vh;
             text-align: center;
         }
 
         .container {
-            max-width: 800px;
-            padding: 20px;
+            max-width: 900px;
+            padding: 40px 20px;
         }
 
         h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin-bottom: 10px;
             color: var(--discord-blue);
         }
 
-        p.subtitle {
-            font-size: 1.2rem;
+        .subtitle {
+            font-size: 1.3rem;
             color: var(--grey);
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
 
-        .card {
-            background-color: #23272a;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        /* Haupt-Karte */
+        .main-card {
+            background-color: var(--card-bg);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            margin-bottom: 50px;
         }
 
+        /* Button mit Hover-Effekt */
         .button {
             background-color: var(--discord-blue);
             color: white;
-            padding: 15px 30px;
+            padding: 18px 35px;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 10px;
             font-weight: bold;
-            font-size: 1.1rem;
-            transition: transform 0.2s, background-color 0.2s;
+            font-size: 1.2rem;
             display: inline-block;
-            margin-top: 20px;
+            transition: all 0.3s ease; /* Macht die Bewegung weich */
+            cursor: pointer;
+            border: none;
         }
 
         .button:hover {
             background-color: #5b6eae;
-            transform: scale(1.05);
+            transform: translateY(-5px) scale(1.03); /* Bewegt den Button leicht hoch */
+            box-shadow: 0 5px 15px rgba(114, 137, 218, 0.4);
+        }
+
+        /* Die drei Vertrauens-Boxen */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .feature-box {
+            background-color: rgba(255,255,255,0.05);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: 0.3s;
+        }
+
+        .feature-box:hover {
+            border-color: var(--discord-blue);
+            background-color: rgba(114, 137, 218, 0.05);
+        }
+
+        .feature-box h3 {
+            color: var(--discord-blue);
+            margin-bottom: 10px;
+        }
+
+        .feature-box p {
+            font-size: 0.95rem;
+            color: var(--grey);
+            line-height: 1.5;
         }
 
         .vision-section {
-            margin-top: 50px;
-            font-size: 0.9rem;
+            margin-top: 60px;
             color: var(--grey);
+            font-size: 0.9rem;
             border-top: 1px solid #444;
-            padding-top: 20px;
+            padding-top: 30px;
         }
 
-        .badge-preview {
-            color: #43b581;
-            font-weight: bold;
-            display: block;
-            margin-top: 10px;
+        footer {
+            margin-top: 40px;
+            padding-bottom: 20px;
+            font-size: 0.8rem;
+            color: #555;
         }
     </style>
 </head>
@@ -88,25 +125,37 @@
     <div class="container">
         <header>
             <h1>VerifiedMe</h1>
-            <p class="subtitle">Echte Menschen statt Bots. Deine Vertrauensplattform für Discord.</p>
+            <p class="subtitle">Die Zukunft des digitalen Vertrauens.</p>
         </header>
 
-        <main class="card">
-            <h2>Werde Teil der Beta-Phase</h2>
-            <p>Sichere dir deinen Platz und zeige deiner Community, dass du ein echter Mensch bist. In der Testphase komplett kostenlos.</p>
+        <main class="main-card">
+            <h2>Mensch oder Bot?</h2>
+            <p>Schütze deine Identität und zeige, dass du echt bist. Unsere Plattform hilft Discord-Communities, sicher und authentisch zu bleiben.</p>
             
             <a href="https://forms.gle/gLnJsRrNQyXgRufs5" class="button">Jetzt verifizieren lassen</a>
             
-            <span class="badge-preview">✅ Verified Status nach Prüfung</span>
+            <div class="features">
+                <div class="feature-box">
+                    <h3>🛡️ E-Mail Check</h3>
+                    <p>Wir akzeptieren keine Wegwerf-Mails. Jeder Account wird über eine echte, bestätigte E-Mail verifiziert.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>👤 Menschliche Prüfung</h3>
+                    <p>Hinter jedem Badge steht eine echte Kontrolle. Wir schauen uns die Accounts an, um Bots keine Chance zu geben.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>✅ Echter Badge</h3>
+                    <p>Ein Symbol, das man nicht kaufen kann. Es steht für echtes Vertrauen in deiner Community.</p>
+                </div>
+            </div>
         </main>
 
         <section class="vision-section">
-            <h3>Unsere Vision</h3>
-            <p>Was als Lösung für Discord beginnt, wird zur globalen Schnittstelle für digitales Vertrauen. Wir bauen die Brücke zwischen Nutzern und Plattformen – für ein Internet ohne Fake-Accounts.</p>
+            <p><strong>Unsere Vision:</strong> Wir bauen eine globale Infrastruktur für Vertrauen. Was bei Discord beginnt, wird der Standard für das gesamte Internet.</p>
         </section>
 
         <footer>
-            <p>&copy; 2026 VerifiedMe.ch</p>
+            <p>&copy; 2026 VerifiedMe.ch | Entwickelt für echte Menschen.</p>
         </footer>
     </div>
 
