@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | VerifiedMe</title>
+    <style>
+        :root {
+            --discord-blue: #7289da;
+            --dark-bg: #2c2f33;
+            --white: #ffffff;
+            --grey: #99aab5;
+            --verified-green: #43b581;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--white);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .profile-card {
+            background-color: #23272a;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            text-align: center;
+            width: 350px;
+        }
+
+        .avatar {
+            width: 80px;
+            height: 80px;
+            background-color: var(--discord-blue);
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .username-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .username {
+            font-size: 1.6rem;
+            margin: 0;
+        }
+
+        /* Das dezente grüne Häkchen */
+        .verified-badge {
+            color: var(--verified-green);
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        .status-badge {
+            background-color: rgba(67, 181, 129, 0.1);
+            color: var(--verified-green);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+            border: 1px solid var(--verified-green);
+        }
+
+        .info-text {
+            color: var(--grey);
+            font-size: 0.85rem;
+            margin-top: 25px;
+            line-height: 1.4;
+        }
+
+        .footer-link {
+            margin-top: 30px;
+            display: block;
+            color: var(--discord-blue);
+            text-decoration: none;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="avatar">U</div>
+        
+        <div class="username-container">
+            <h2 class="username">User123</h2>
+            <span class="verified-badge" title="Verified Human">✓</span>
+        </div>
+
+        <div class="status-badge">VERIFIED HUMAN</div>
+
+        <p class="info-text">
+            This account has been manually audited and confirmed as a real person.
+        </p>
+
+        <a href="index.html" class="footer-link">← Back to Home</a>
+    </div>
+
+</body>
+</html>
