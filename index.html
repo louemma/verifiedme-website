@@ -3,36 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VerifiedMe | Digital Trust Platform</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>VerifiedMe | Human Verification for Digital Communities</title>
+    <style>
+        :root {
+            --discord-blue: #7289da;
+            --dark-bg: #2c2f33;
+            --white: #ffffff;
+            --grey: #99aab5;
+            --card-bg: #23272a;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--white);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            color: var(--discord-blue);
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            color: var(--grey);
+            margin-bottom: 40px;
+        }
+
+        .main-card {
+            background-color: var(--card-bg);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            margin-bottom: 50px;
+        }
+
+        .button {
+            background-color: var(--discord-blue);
+            color: white;
+            padding: 18px 35px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            display: inline-block;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .button:hover {
+            background-color: #5b6eae;
+            transform: translateY(-5px) scale(1.03);
+            box-shadow: 0 5px 15px rgba(114, 137, 218, 0.4);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .feature-box {
+            background-color: rgba(255,255,255,0.05);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: 0.3s;
+        }
+
+        .feature-box:hover {
+            border-color: var(--discord-blue);
+            background-color: rgba(114, 137, 218, 0.05);
+        }
+
+        .feature-box h3 {
+            color: var(--discord-blue);
+            margin-bottom: 10px;
+        }
+
+        .feature-box p {
+            font-size: 0.95rem;
+            color: var(--grey);
+            line-height: 1.5;
+        }
+
+        .vision-section {
+            margin-top: 60px;
+            color: var(--grey);
+            font-size: 0.9rem;
+            border-top: 1px solid #444;
+            padding-top: 30px;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-bottom: 20px;
+            font-size: 0.8rem;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
+
     <div class="container">
         <header>
-            <div class="logo">VerifiedMe</div>
+            <h1>VerifiedMe</h1>
+            <p class="subtitle">The Future of Digital Trust.</p>
         </header>
-        
-        <main class="hero">
-            <h1>The Gold Standard for Human Verification</h1>
-            <p>We provide manual identity audits to protect the digital world from fraud and impersonation.</p>
-            
-            <div class="cta-box">
-                <a href="https://forms.gle/DEIN_LINK" class="btn-primary">Apply for Verification</a>
-            </div>
 
-            <section class="directory">
-                <h3>Verified Directory</h3>
-                <div class="member-links">
-                    <a href="lou.html" class="member-card">Founder Profile</a>
-                    <a href="louise.html" class="member-card">Louise's Profile</a>
+        <main class="main-card">
+            <h2>Human or Bot?</h2>
+            <p>Protect your identity and prove you are real. We help Discord communities stay safe and authentic.</p>
+            
+            <a href="https://forms.gle/gLnJsRrNQyXgRufs5" class="button">Get Verified Now</a>
+            
+            <div class="features">
+                <div class="feature-box">
+                    <h3>🛡️ Email Check</h3>
+                    <p>No burner emails allowed. Every account is verified through a real, confirmed email address.</p>
                 </div>
-            </section>
+                <div class="feature-box">
+                    <h3>👤 Human Audit</h3>
+                    <p>A real check behind every badge. We review accounts to give bots no chance.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>✅ Trusted Badge</h3>
+                    <p>A symbol that can't be bought. It represents true trust within your community.</p>
+                </div>
+            </div>
         </main>
 
+        <section class="vision-section">
+            <p><strong>Our Vision:</strong> Building a global infrastructure for trust. Starting with Discord, becoming the standard for the entire internet.</p>
+        </section>
+
         <footer>
-            <p>&copy; 2024 VerifiedMe - Manual Human Audit Protocol</p>
+            <p>&copy; 2026 VerifiedMe.ch | Built for Humans.</p>
         </footer>
     </div>
+
 </body>
 </html>
