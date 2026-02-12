@@ -3,20 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Louise - Verified Profile</title>
+    <title>Louise | Verified Profile</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="profile-card">
-        <div class="avatar">L</div>
-        <h2 class="username">Louise</h2>
-        
-        <div class="status-box">
-            <span class="badge verified">✓ Verified Human</span>
-            <p>This account has been manually audited and confirmed as authentic.</p>
-        </div>
+    <div class="profile-container">
+        <div class="profile-card">
+            <div class="profile-header">
+                <div class="avatar-circle">L</div>
+                <h1 class="username">Louise</h1>
+                <p class="tag">@verified_member</p>
+            </div>
 
-        <a href="index.html" class="back-link">← Back to Home</a>
+            <div class="verification-status">
+                <div class="badge-icon">✓</div>
+                <div class="status-text">
+                    <h2>Verified Human</h2>
+                    <p>This account has been manually audited and confirmed as a real person by the VerifiedMe protocol.</p>
+                </div>
+            </div>
+
+            <div class="profile-info">
+                <div class="info-item">
+                    <span>Status:</span>
+                    <strong>Active</strong>
+                </div>
+                <div class="info-item">
+                    <span>Trust Score:</span>
+                    <strong>100%</strong>
+                </div>
+            </div>
+
+            <a href="index.html" class="back-button">← Back to Directory</a>
+        </div>
     </div>
 </body>
 </html>
